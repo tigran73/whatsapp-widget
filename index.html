@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whatsapp widget</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Whatsapp widget">
+    <meta name="keywords" content="HTML,CSS,JavaScript,PHP,Whatsapp">
+    <meta name="author" content="Tigran Sarkisyan Email: tigran.sarkisyan96@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="whatsapp.css" type="text/css">
+</head>
+<body>
+<div class="whatsapp">
+    <div id="chat-container" class="chat-container">
+        <div class="chat-header">
+            <div>
+                <img src="1.png" alt="">
+                <span>Name</span>
+            </div>
+            <a class="whatsapp-close" onclick="toggle_chat()"></a>
+        </div>
+        <div class="chat-body">
+            <div class="message">
+                <span>Name</span>
+                <p>Hi there 👋</p>
+                <p>How can I help you?</p>
+                <p id="time"></p>
+            </div>
+
+        </div>
+        <div class="chat-footer">
+            <a href="https://api.whatsapp.com/send?phone=447751471779" target="_blank">
+                <img src="whatsapp.png" alt="">
+                <span>Start Chat</span>
+            </a>
+        </div>
+    </div>
+</div>
+<a id="whatsapp-btn" class="whatsapp-btn" onclick="toggle_chat()">
+    <span class="pulse">
+        <img src="whatsapp.png" alt="whatsapp">
+    </span>
+</a>
+<script type="text/javascript" src="whatsapp.js"></script>
+</body>
+</html>
